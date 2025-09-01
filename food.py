@@ -13,7 +13,6 @@ class Food(Object):
 
     def __init__(self) -> None:
         self.position = self.generate_position()
-        super().__init__()
 
     def generate_position(self) -> Tuple[int, int]:
         """Generate a random position for the food"""

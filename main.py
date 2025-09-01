@@ -8,10 +8,8 @@ from globals import (
 from snake import Snake
 from food import Food
 
-pygame.init()
 
-
-class Game:
+class Game_Loop:
     """Main game Class"""
 
     def __init__(self) -> None:
@@ -73,6 +71,7 @@ class Game:
 
 
 if __name__ == "__main__":
-    game = Game()
+    pygame.init()
+    game = Game_Loop()
     game.run()
     pygame.quit()
